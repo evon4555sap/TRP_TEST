@@ -15,9 +15,12 @@ import com.thoughtworks.selenium.Wait;
 
 public class util {
 
+
+
 	// print message
 	public static void message(String string) throws Exception {
 		System.out.println(string);
+		System.out.println("for test");
 	}
 
 	// click button and wait for seconds
@@ -110,9 +113,9 @@ public class util {
 				util.message("input type or value is not correct");
 				return null;
 			}
-			
-			
-			
+
+
+
 		} catch (Exception e) {
 			System.out.println("Cannot find element, time out");
 			return null;
@@ -204,10 +207,10 @@ public class util {
 			WebElement item = itemList.get(number);
 			item.click();
 			util.delay(5);
-			
+
 		} catch (Exception e) {
 			System.out.println("Cannot find element, time out");
-			
+
 		}
 
 	}
@@ -236,7 +239,7 @@ public class util {
 
 			return stockNew;
 		} catch (Exception e) {
-			
+
 			System.out.println("Cannot find element, time out");
 			return null;
 
